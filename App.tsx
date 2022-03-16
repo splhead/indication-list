@@ -1,11 +1,13 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {SafeAreaView, StatusBar} from 'react-native';
+import {FormItem} from './src/screens/FormItem';
 
 const App = () => {
   return (
-    <View>
-      <Text>ok</Text>
-    </View>
+    <SafeAreaView style={{flex: 1}}>
+      <StatusBar backgroundColor="transparent" translucent={true} />
+      <FormItem />
+    </SafeAreaView>
   );
 };
 
