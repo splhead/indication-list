@@ -1,20 +1,35 @@
 import React from 'react';
-import {SafeAreaView, StatusBar, StyleSheet} from 'react-native';
-import {FormItem} from './src/screens/FormItem';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+
+import {Home} from '@screens/Home';
+import {FormItem} from '@screens/FormItem';
 
 const App = () => {
+  const Stack = createNativeStackNavigator();
+
   return (
-    <SafeAreaView style={styles.container}>
-      <StatusBar backgroundColor="transparent" translucent={true} />
-      <FormItem />
-    </SafeAreaView>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Home"
+          component={Home}
+          options={{
+            title: 'Indicações',
+            headerStyle: {
+              backgroundColor: '#210a48',
+            },
+            headerTintColor: '#e0e0e0',
+          }}
+        />
+        <Stack.Screen
+          name="FormItem"
+          component={FormItem}
+          options={{headerShown: false}}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
 
 export default App;
