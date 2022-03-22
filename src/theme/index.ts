@@ -1,3 +1,4 @@
+// TO-DO refactor to use themes
 export default {
   COLORS: {
     BACKGROUND: '#F7F7F7',
