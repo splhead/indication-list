@@ -11,14 +11,19 @@ export const Content = styled.View`
   padding: 16px 24px;
 `;
 
+export const Shadow = styled(LinearGradient)`
+  height: 200px;
+  margin-top: -200px;
+`;
+
 export const ImageHeader = styled(FastImage)`
-  flex: 0.5;
+  height: 200px;
 `;
 
 export const LoadImageButton = styled.TouchableOpacity`
   height: 56px;
   width: 56px;
-  background-color: #8479b4;
+  background-color: #c4b5f7;
   position: absolute;
   right: 24px;
   top: -28px;
@@ -33,20 +38,7 @@ export const Title = styled.Text`
   color: #e0e0e0;
   font-weight: bold;
   margin-bottom: 16px;
+  margin-top: -45px;
 `;
 
-export const Input = styled.TextInput`
-  height: 40px;
-  background-color: #4e3c8b;
-  border-radius: 4px;
-  padding-left: 16px;
-  padding-right: 8px;
-  color: #d2cbee;
-  font-size: 16px;
-  margin: 8px 0px;
-`;
-
-export const InputArea = styled(Input)`
-  height: auto;
-`;
 // #8479b4 #433576 #210a48

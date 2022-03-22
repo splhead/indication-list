@@ -6,7 +6,6 @@
       "description": "",
       "imgUrl": "",
       "sampleUrl": "",
-      "type": "video",
       "status": true,
       "createdAt": "2019-08-01T00:00:00-04:00",
       "updatedAt": "2019-08-10T00:00:00-04:00"
@@ -17,7 +16,6 @@
       "description": "",
       "imgUrl": "",
       "sampleUrl": "",
-      "type": "book",
       "status": false,
       "createdAt": "2019-08-20T00:00:00-04:00",
       "updatedAt": "2019-08-20T00:00:00-04:00"
@@ -28,7 +26,6 @@
       "description": "",
       "imgUrl": "",
       "sampleUrl": "",
-      "type": "album",
       "status": false,
       "createdAt": "2019-08-30T00:00:00-04:00",
       "updatedAt": "2019-08-30T00:00:00-04:00"
