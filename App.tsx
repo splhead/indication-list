@@ -5,8 +5,13 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {Home} from '@screens/Home';
 import {FormItem} from '@screens/FormItem';
 
+export type RootStackParamList = {
+  Home: undefined;
+  FormItem: {id?: string};
+};
+
 const App = () => {
-  const Stack = createNativeStackNavigator();
+  const Stack = createNativeStackNavigator<RootStackParamList>();
 
   return (
     <NavigationContainer>
@@ -26,6 +31,7 @@ const App = () => {
           name="FormItem"
           component={FormItem}
           options={{headerShown: false}}
+          initialParams={{id: undefined}}
         />
       </Stack.Navigator>
     </NavigationContainer>

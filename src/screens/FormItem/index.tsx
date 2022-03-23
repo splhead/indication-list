@@ -5,21 +5,21 @@ import {
 } from 'react-native-image-picker';
 import FastImage from 'react-native-fast-image';
 import {MaterialIcons} from '@expo/vector-icons';
-
-import {useNavigation} from '@react-navigation/native';
+import {NativeStackScreenProps} from '@react-navigation/native-stack';
 
 import * as S from './styles';
 import {Input} from '@components/Input';
 import {Switch} from '@components/Switch';
 import {Button} from '@components/Button';
 import {Container} from '@components/Container';
+import {RootStackParamList} from 'App';
 
-export const FormItem = () => {
+type FormItemProps = NativeStackScreenProps<RootStackParamList, 'FormItem'>;
+
+export const FormItem = ({navigation}: FormItemProps) => {
   const [image, setImage] = useState(
     'https://img.elo7.com.br/product/zoom/26BBFD5/big-poster-filme-marvel-fenix-negra-lo004-tamanho-90x60-cm-geek.jpg',
   );
-
-  const navigation = useNavigation();
 
   const updateImage = async () => {
     const options: ImageLibraryOptions = {quality: 0.7, mediaType: 'photo'};
@@ -62,7 +62,7 @@ export const FormItem = () => {
 
         <Switch label="assistido" />
 
-        <Button type="secondary" onPress={() => navigation.goBack()}>
+        <Button type="secondary" onPress={() => navigation.pop()}>
           Cancelar
         </Button>
 

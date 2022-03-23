@@ -2,9 +2,9 @@
   "items": [
     {
       "id": "a2StGXR8_Z5jdHi6B-mr4",
-      "title": "The WWII",
+      "title": "Back to the future",
       "description": "",
-      "imgUrl": "",
+      "imageUri": "https://m.media-amazon.com/images/I/71BPuv+iRbL._AC_SL1000_.jpg",
       "sampleUrl": "",
       "status": true,
       "createdAt": "2019-08-01T00:00:00-04:00",
@@ -12,9 +12,9 @@
     },
     {
       "id": "vVStGXR8_Z5jdHi6B-art",
-      "title": "Mindset",
+      "title": "MoonLight",
       "description": "",
-      "imgUrl": "",
+      "imageUri": "https://cdn.pastemagazine.com/www/system/images/photo_albums/best-movie-posters-2016/large/moonlight-ver2-xlg.jpg?1384968217",
       "sampleUrl": "",
       "status": false,
       "createdAt": "2019-08-20T00:00:00-04:00",
@@ -22,11 +22,11 @@
     },
     {
       "id": "oQStGXR8_Z5jdHi6B-Bnc",
-      "title": "Nirvana",
+      "title": "Ant-man",
       "description": "",
-      "imgUrl": "",
+      "imageUri": "https://ae01.alicdn.com/kf/HTB1rx4QIGmWBuNjy1Xaq6xCbXXaS/DIY-quadro-HOMEM-FORMIGA-MINI-ORIGINAL-MOVIE-POSTER-DS-2-Face-Teatral-Vers-o-Final-tecido.jpg_Q90.jpg_.webp",
       "sampleUrl": "",
-      "status": false,
+      "status": true,
       "createdAt": "2019-08-30T00:00:00-04:00",
       "updatedAt": "2019-08-30T00:00:00-04:00"
     }

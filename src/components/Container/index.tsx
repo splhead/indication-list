@@ -4,7 +4,7 @@ import {StatusBar} from 'react-native';
 import * as S from './styles';
 
 type ContainerProps = {
-  children: ReactNode[];
+  children: ReactNode | ReactNode[];
 };
 
 export const Container = ({children}: ContainerProps) => {

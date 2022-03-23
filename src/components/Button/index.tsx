@@ -7,9 +7,9 @@ export type ButtonProps = TouchableOpacityProps & {
   type?: 'primary' | 'secondary';
 };
 
-export function Button({children, type = 'primary'}: ButtonProps) {
+export function Button({children, type = 'primary', ...props}: ButtonProps) {
   return (
-    <S.StyledButton type={type}>
+    <S.StyledButton type={type} {...props}>
       <S.Label type={type}>{children}</S.Label>
     </S.StyledButton>
   );
