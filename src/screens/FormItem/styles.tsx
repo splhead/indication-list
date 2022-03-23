@@ -1,11 +1,6 @@
 import styled from 'styled-components/native';
 import FastImage from 'react-native-fast-image';
 import {LinearGradient} from 'expo-linear-gradient';
-import {SafeAreaView} from 'react-native-safe-area-context';
-
-export const SafeWrapper = styled(SafeAreaView)`
-  flex: 1;
-`;
 
 export const Content = styled.View`
   flex: 2;

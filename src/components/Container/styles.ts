@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
 import {LinearGradient, LinearGradientProps} from 'expo-linear-gradient';
-import {SafeAreaView} from 'react-native-safe-area-context';
+import {SafeAreaView} from 'react-native';
 
 export const SafeArea = styled(SafeAreaView)`
   flex: 1;
