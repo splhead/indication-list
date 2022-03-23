@@ -1,4 +1,5 @@
 import React, {ReactNode} from 'react';
+import {StatusBar} from 'react-native';
 
 import * as S from './styles';
 
@@ -9,7 +10,10 @@ type ContainerProps = {
 export const Container = ({children}: ContainerProps) => {
   return (
     <S.SafeArea>
-      <S.Container colors={[]}>{children}</S.Container>
+      <S.Container colors={[]}>
+        <StatusBar backgroundColor="transparent" translucent />
+        {children}
+      </S.Container>
     </S.SafeArea>
   );
 };
