@@ -3,12 +3,16 @@ import {SwitchProps as RNSwitchProps} from 'react-native';
 
 import * as S from './styles';
 
-export type SwitchProps = {
+export type SwitchProps = RNSwitchProps & {
   label: string;
-  value?: boolean;
-} & RNSwitchProps;
+};
 
-export const Switch = ({label, value = false}: SwitchProps) => {
+export const Switch = ({
+  label,
+  value = false,
+  onValueChange,
+  ...props
+}: SwitchProps) => {
   const [isEnabled, setIsEnabled] = useState(value);
 
   const toggleSwitch = () => setIsEnabled(previousState => !previousState);
@@ -20,7 +24,14 @@ export const Switch = ({label, value = false}: SwitchProps) => {
           ? `Não ${label}`
           : label.replace(label.charAt(0), label.charAt(0).toUpperCase())}
       </S.Label>
-      <S.StyledSwitch value={isEnabled} onValueChange={toggleSwitch} />
+      <S.StyledSwitch
+        value={isEnabled}
+        onValueChange={() => {
+          toggleSwitch();
+          onValueChange && onValueChange(!isEnabled);
+        }}
+        {...props}
+      />
     </S.Wrapper>
   );
 };

@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import {Switch} from 'react-native';
 import {SwitchProps} from './index';
 
 export const Wrapper = styled.View`
@@ -10,7 +11,7 @@ export const Wrapper = styled.View`
 `;
 
 type LabelProps = {
-  isEnabled: boolean;
+  isEnabled?: boolean;
 };
 
 export const Label = styled.Text<LabelProps>`
@@ -18,7 +19,7 @@ export const Label = styled.Text<LabelProps>`
   margin-right: 2px;
 `;
 
-export const StyledSwitch = styled.Switch.attrs<SwitchProps>(({value}) => ({
+export const StyledSwitch = styled(Switch).attrs<SwitchProps>(({value}) => ({
   trackColor: {
     false: '#767577',
     true: '#4e3c8b',

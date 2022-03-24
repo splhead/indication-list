@@ -12,7 +12,7 @@ import {api} from '../../services/api';
 type HomeProps = NativeStackScreenProps<RootStackParamList, 'Home'>;
 
 export type Item = {
-  id: string;
+  id?: string;
   title: string;
   description?: string;
   imageUri?: string;
@@ -41,7 +41,16 @@ export const Home = ({navigation}: HomeProps) => {
       <FlatList
         data={items}
         renderItem={({item}: {item: Item}) => {
-          return <ListItem item={item} />;
+          return (
+            <ListItem
+              item={item}
+              onPress={() =>
+                navigation.navigate('FormItem', {
+                  id: item.id,
+                })
+              }
+            />
+          );
         }}
         numColumns={2}
       />

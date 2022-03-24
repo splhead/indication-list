@@ -1,8 +1,11 @@
 import styled from 'styled-components/native';
 import FastImage from 'react-native-fast-image';
 import {MaterialIcons} from '@expo/vector-icons';
+import {ListItemProps} from '.';
 
-export const Wrapper = styled.View`
+type WrapperProps = Pick<ListItemProps, 'onPress'>;
+
+export const Wrapper = styled.TouchableOpacity<WrapperProps>`
   flex: 0.5;
   padding: 16px;
   justify-content: center;
