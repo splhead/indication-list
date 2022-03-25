@@ -47,11 +47,11 @@ yarn android
 ```
 
 #### To do
-[ ] use theme files
-[ ] search and filter indications
-[ ] share indications
-[ ] test in iOS
-[ ] ...
+- [ ] use theme files
+- [ ] search and filter indications
+- [ ] share indications
+- [ ] test in iOS
+- [ ] ...
 
 
 This app is also an activity for my postgraduate at [Faculdade Unyleya](https://unyleya.edu.br/)
