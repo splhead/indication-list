@@ -3,7 +3,7 @@
     {
       "id": "a2StGXR8_Z5jdHi6B-mr4",
       "title": "Back to the future",
-      "description": "volta",
+      "description": "filme nostálgico para assistir com a família toda!",
       "imageUri": "https://m.media-amazon.com/images/I/71BPuv+iRbL._AC_SL1000_.jpg",
       "sampleUrl": "",
       "status": true,
@@ -13,7 +13,7 @@
     {
       "id": "vVStGXR8_Z5jdHi6B-art",
       "title": "MoonLight",
-      "description": "",
+      "description": "Não lembro de ter assistido esse.",
       "imageUri": "https://cdn.pastemagazine.com/www/system/images/photo_albums/best-movie-posters-2016/large/moonlight-ver2-xlg.jpg?1384968217",
       "sampleUrl": "",
       "status": false,
@@ -25,7 +25,7 @@
       "title": "Ant-man",
       "description": "a marvel film",
       "imageUri": "https://ae01.alicdn.com/kf/HTB1rx4QIGmWBuNjy1Xaq6xCbXXaS/DIY-quadro-HOMEM-FORMIGA-MINI-ORIGINAL-MOVIE-POSTER-DS-2-Face-Teatral-Vers-o-Final-tecido.jpg_Q90.jpg_.webp",
-      "sampleUrl": "",
+      "sampleUrl": "Filme cômico do homem-formiga",
       "status": false,
       "createdAt": "2019-08-30T00:00:00-04:00",
       "updatedAt": "2019-08-30T00:00:00-04:00"
