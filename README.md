@@ -50,6 +50,7 @@ yarn android
 [ ] use theme files
 [ ] search and filter indications
 [ ] share indications
+[ ] test in iOS
 [ ] ...
 
 
