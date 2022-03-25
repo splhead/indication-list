@@ -4,7 +4,7 @@ A app to save the indications of movies.
 
 
 
-![demo](demo.gig)
+![demo](demo.gif)
 
 ### Thanks for the awesome libs
 
