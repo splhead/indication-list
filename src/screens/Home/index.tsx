@@ -22,19 +22,25 @@ export type Item = {
   updatedAt?: Date;
 };
 
-export const Home = ({navigation}: HomeProps) => {
+export const Home = ({route, navigation}: HomeProps) => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
     const loadItems = async () => {
-      const response = await api.get('items');
-      const {data} = response;
-      if (data) {
-        setItems(data);
+      try {
+        const response = await api.get(
+          'items?_sort=updateAt,status&_order=desc,asc',
+        );
+        const {data} = response;
+        if (data) {
+          setItems(data);
+        }
+      } catch (error) {
+        console.error(error);
       }
     };
     loadItems();
-  }, []);
+  }, [route.params]);
 
   return (
     <Container>
@@ -46,7 +52,7 @@ export const Home = ({navigation}: HomeProps) => {
               item={item}
               onPress={() =>
                 navigation.navigate('FormItem', {
-                  id: item.id,
+                  item,
                 })
               }
             />
@@ -55,7 +61,8 @@ export const Home = ({navigation}: HomeProps) => {
         numColumns={2}
       />
 
-      <S.AddButton onPress={() => navigation.navigate('FormItem', {})}>
+      <S.AddButton
+        onPress={() => navigation.navigate('FormItem', {item: undefined})}>
         <MaterialIcons name="add" size={32} color="#110624" />
       </S.AddButton>
     </Container>

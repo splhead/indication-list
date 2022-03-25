@@ -2,12 +2,12 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import {Home} from '@screens/Home';
+import {Home, Item} from '@screens/Home';
 import {FormItem} from '@screens/FormItem';
 
 export type RootStackParamList = {
-  Home: undefined;
-  FormItem: {id?: string};
+  Home: {update: boolean};
+  FormItem: {item?: Item};
 };
 
 const App = () => {
@@ -31,7 +31,7 @@ const App = () => {
           name="FormItem"
           component={FormItem}
           options={{headerShown: false}}
-          initialParams={{id: undefined}}
+          initialParams={{item: undefined}}
         />
       </Stack.Navigator>
     </NavigationContainer>

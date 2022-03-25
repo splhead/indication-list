@@ -21,7 +21,12 @@ export const ListItem = ({item, onPress}: ListItemProps) => {
           uri: item.imageUri,
         }}
         resizeMode={FastImage.resizeMode.cover}>
-        {item.status && <S.Status name="done" size={32} color="#72feb7" />}
+        {item.status && (
+          <S.Overlay status={item.status}>
+            <S.MaterialIcon />
+            <S.StatusText>assistido</S.StatusText>
+          </S.Overlay>
+        )}
       </S.Image>
 
       <S.Title>{item.title}</S.Title>
